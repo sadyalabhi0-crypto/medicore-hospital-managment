@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder-slate-400 transition focus:border-medical-600 focus:outline-none focus:ring-2 focus:ring-medical-600/20;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-medical-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-medical-700 focus:outline-none focus:ring-2 focus:ring-medical-600/30 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-200;
+  }
+}
